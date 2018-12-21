@@ -1,0 +1,23 @@
+package com.example.app;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertTrue;
+
+
+public class FakeTest {
+    @Before
+    public void setUp() {
+    }
+
+    @After
+    public void tearDown() {
+    }
+
+    @Test
+    public void testTheThing() {
+        assertTrue(true);
+    }
+}

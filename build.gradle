@@ -1,0 +1,28 @@
+plugins {
+  id 'java'
+  id 'application'
+}
+
+version = '1.0-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  //compile "io.vertx:vertx-core:3.6.1"
+  testCompile "junit:junit:4.12"
+}
+
+
+mainClassName = 'com.example.app.Main'
+
+jar {
+  manifest {
+    attributes(
+      'Main-Class': "$mainClassName"
+    )
+  }
+}
